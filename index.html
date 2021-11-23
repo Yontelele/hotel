@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jonathan Hotel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span></span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENY<i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>VÄLKOMMEN TILL JONATHAN HOTEL</h2>
+                <button type = "button" class = "head-btn">BOKA BOENDE</button>
+            </div>
+        </header>
+
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">hem</a></li>
+                <li><a href = "#rooms">rum och sviter</a></li>
+                <li><a href = "#customers">recention</a></li>
+            </ul>
+        </div>
+        <div id = "modal"></div>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Incheckning: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Utcheckning: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Vuxna: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Barn 0-12 år: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rum: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Sök lediga rum">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "rooms-container">
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Enkel Rum</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Frukostbuffé
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fri tillgång till gym
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Badrum med badkar och dusch
+                            </li>
+                        </ul>
+                        <p>Hos oss finns inga standardrum. Livet ska vara storslaget, inte standard. Våra individuellt inredda enkelrum är från 15 kvm, perfekt anpassade efter en person. Rummet blir en behaglig oas där bara det viktigaste är på plats: en fin arbetsplats, en elegant fåtölj och en makalöst skön säng, minst 120 cm bred. Slappna av, vila ut och vakna pigg i en värld där alla detaljer är genomtänkta, mattan är mjuk och det mesta du behöver går att ordna.</p>
+                        <p class = "rate">
+                            <span>399kr /</span> Per Natt
+                        </p>
+                        <button type = "button" class = "btn">Boka nu</button>
+                    </div>
+                </article>
+
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Royal Sviten</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                En minibar fylld av goda drycker och tilltugg
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Komplett utbud av badrumsartiklar
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Entré till Jonathan Hotel Nordic Spa & Fitness
+                            </li>
+                        </ul>
+                        <p>I den 82 kvm stora sviten är den kungliga glansen mer påtaglig än vanligt, det är bara att öppna dörrarna till den balkongen så ser man Stockholms slott på andra sidan vattnet. Sviten består av tre rum: ett mötesrum som också kan användas som matsal, ett vardagsrum och ett sovrum. I det kungliga välkomnandet ingår en flaska champagne, samt ett överdådigt fruktfat. Kom och lev som en kung. Eller drottning.</p>
+                        <p class = "rate">
+                            <span>999kr /</span> Per Natt
+                        </p>
+                        <button type = "button" class = "btn">Boka nu</button>
+                    </div>
+                </article>
+
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>SUPERIOR RUM</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Valfri dagstidning
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Minst en fåtölj
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fri uppkoppling till Internet: snabb och säker, fast eller trådlös
+                            </li>
+                        </ul>
+                        <p>Ta en paus från vardagen i ett Superior rum från 20 kvm där varje detalj är genomtänkt. Tänk fritt ifred vid en välplanerad arbetsplats, eller pusta ut efter dagen i en skön fåtölj. Dubbelsängen är minst 180 cm och gjord med tanke på att ingen ska vilja lämna den. Flera rum har en fantastisk utsikt över vattnet framför Stockholms slott och Gamla stan. Är den mindre viktig, finns lika fina rum till ett lite lägre pris med fönster mot en sidogata eller innergård. Ibland är insikt större än utsikt. Men att ta en paus är alltid klokt.</p>
+                        <p class = "rate">
+                            <span>699kr /</span> Per Natt
+                        </p>
+                        <button type = "button" class = "btn">Boka nu</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "customers-container">
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Vi älskade det</h3>
+                        <p>Finaste hotellet jag besökt och alla fina hus i närheten.
+                             All denna fantastiska kultur.
+                             Fantastisk personal. Bästa servicen.
+                             Frukosten va helt underbar.
+                             Godaste omeletten.
+                             Allt va bara så perfekt.</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                    </div>
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Extremt bekvämt</h3>
+                        <p>Ett riktigt bra hotell. En riktig klassiker med skön klassisk känsla i hela huset. Riktigt bra frukost, kanske den bästa äggröra jag hittat på ett hotell. Bra bar och restaurang. Rent och snyggt. Och trevlig personal så klart!</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                    </div>
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Grymt ställe</h3>
+                        <p>Jag tycker att Jonathan Hotel är ett av de bästa hotellen som jag har bott på. Rummet var lite litet, men mysigt. Frukosten är något utöver det vanliga. Personalen gjorde sitt yttersta för att hjälpa till under vistelsen.</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>Kontakt</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Stockholm, Sverige
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +46 55 555 5555
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@jonathanhotel.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
